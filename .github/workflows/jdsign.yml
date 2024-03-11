@@ -6,7 +6,7 @@ on:
     branches:
       - "main"
     paths:
-      - ".github/workflows/jd_sign.yml"
+      - ".github/workflows/jdsign.yml"
       - "official/*"
 
 jobs:
