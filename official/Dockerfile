@@ -2,7 +2,8 @@ FROM alpine:latest
 COPY . /root
 ENV TZ=Asia/Shanghai \
         LANG=zh_CN.UTF-8
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
+#RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
+#RUN dl-cdn.alpinelinux.org /etc/apk/repositories && \
     apk add tzdata alpine-conf  && \
     /sbin/setup-timezone -z Asia/Shanghai && \
         apk del alpine-conf && \
